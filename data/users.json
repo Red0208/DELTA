@@ -1,0 +1,39 @@
+[
+{
+	"name":"Red Liu",
+	"type":"Student",
+	"email":"xliu42@art.edu",
+	"classes":[608,613,635]
+},
+{
+	"name":"Hamilton Cline",
+	"type":"Teacher",
+	"email":"hcline@academyart.edu",
+	"classes":[608,617,820]
+},
+{
+	"name":"Phoebe Buffay",
+	"type":"Singer",
+	"email":"phoebe@earthlink.net",
+	"classes":[608,613,635]
+},
+{
+	"name":"Joey Tribbiani",
+	"type":"Actor",
+	"email":"joeytirbs@aol.com",
+	"classes":[608,613,635]
+},
+{
+	"name":"Chandler Bing",
+	"type":"Who knows",
+	"email":"bingtastic@yahoo.com",
+	"classes":[608,613,635]
+},
+{
+	"name":"111",
+	"type":"111",
+	"email":"bingtastic@yahoo.com",
+	"classes":[608,613,635]
+}
+
+]
