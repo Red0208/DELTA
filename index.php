@@ -48,8 +48,31 @@ include_once "parts/templates.php";
 		echo "<div class='productlist grid gap'>",array_reduce($result,'productListTemplate'),"</div>";
 
 		?>
+
+
 </div>
 </div>
+<br>
+<div class="container">
+	<h2>Recommend Sunglasses</h2>
+			<?php recommendedCategory("Versace");?>
+</div>
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

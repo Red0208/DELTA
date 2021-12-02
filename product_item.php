@@ -1,6 +1,7 @@
 <?php
 
 		include_once "lib/php/functions.php";
+		include_once "parts/templates.php";
 		
 		$product = makeQuery(makeConn(),"SELECT * FROM `products` WHERE `id` =".$_GET['id'])[0];
 
@@ -100,6 +101,11 @@
 			<h3>PERSOL</h3>
 			<p><?= $product->description ?></p>
 		</div>
+
+		<h2>Recommened Products</h2>
+		<?
+		recommendedSimilar($product->category,$product->id); 
+		?>
 	
 </div>
 

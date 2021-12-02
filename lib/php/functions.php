@@ -22,7 +22,15 @@ session_start();
  				$conn->set_charset('utf8');
  				return $conn;
  		}
-	
+		
+		function makePDOConn() {
+			try {
+				$conn = new PDO(...PDOauth());
+			}catch(PDOException $e) {
+				die($e->getMessage());
+			}
+			return $conn;
+		}
 	
 
 
