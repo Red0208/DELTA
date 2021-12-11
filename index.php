@@ -12,7 +12,7 @@ include_once "parts/templates.php";
 	<?php include "parts/meta.php"; ?>
 
 </head>
-<body>
+<body class="flush">
 	
 	<?php include "parts/navbar.php"; ?>
 
@@ -25,7 +25,7 @@ include_once "parts/templates.php";
 		<p>The first generation of Ray-Ban smart glasses has arrived, discover the new way to capture, share & listen. Only available at select, certified Ray-Ban dealers – online and in store.</p>
 
 			<div class="form-control-1">
-			<a href="#" class="form-button">Explore</a>
+			<a href="product_list.php" class="form-button">Explore</a>
 		</div>
 	</div>
 

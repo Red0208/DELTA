@@ -75,6 +75,7 @@ a:hover {
 .flex-justify-center { justify-content: center; }
 
 .flex-column { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
 
 
 
@@ -113,7 +114,7 @@ a:hover {
 }
 
 .nav .active a {
-   background-color: var(--color-main-light);
+   background-color: var(--color-main-medium);
    color: inherit;
 }
 
@@ -178,6 +179,7 @@ a:hover {
    height: 0;
    background-color: var(--color-main-medium);
    transition: all 0.3s;
+  
 }
 
 
@@ -192,7 +194,7 @@ a:hover {
    background-color: var(--color-main-light);
    color: var(--color-white);
    line-height: var(--header-height);
-
+   margin-bottom: 1em;
 }
 
 .navbar h1{
@@ -202,6 +204,9 @@ a:hover {
 }
 .navbar a {
    padding: 0 0.5em;
+}
+.flush>.navbar {
+   margin-bottom: 0;
 }
 
 
@@ -243,6 +248,11 @@ a:hover {
       padding: 0;
    }
 
+   [class*='col-']>.card {
+      height: 100%;
+      margin:0;
+   }
+
   .card-section~.card-section {
     border-top: 1px solid var(--color-main-light);
 
@@ -252,6 +262,10 @@ a:hover {
     padding: 1.315em;
 }
 
+.card-section2 {
+    padding: 1.315em;
+    margin-top: -1em;
+}
 
 
 .view-window { 
@@ -345,6 +359,7 @@ a:hover {
 .hotdog input,
 .hotdog,
 .form-button,
+.form-button-1,
 .form-input,
 .form-item {
    display: inline-block;
@@ -358,7 +373,6 @@ a:hover {
 
 
 }
-
 .form-input {
    border-bottom: 1px solid var(--color-neutral-light);
       padding: 0.5em 1em;
@@ -389,6 +403,30 @@ a:hover {
     width: auto;
 }
 
+.form-button-1 {
+   background-color: var(--color-neutral-light);
+   padding: 0.5em 1em;
+   border-radius: 1em;
+   cursor: pointer;
+   text-align: center;
+   width: 120px;
+   margin-right: 0.5em;
+
+}
+
+.form-button-1:hover {
+   background-color: var(--color-main-medium);
+   color: var(--color-white);
+   text-decoration: none;
+}
+
+.form-button-1:active {
+   background-color: var(--color-main-medium);
+   color: inherit;
+}
+
+
+
 .form-button:hover {
    text-decoration: none;
 }
@@ -402,6 +440,7 @@ a:hover {
    background-color: var(--color-neutral-light);
    border-radius: 1em;
    cursor: pointer;
+   text-align: center;
 }
 
 .form-select {

@@ -3,8 +3,8 @@
 
 	<base href="https://xinyuanliu.com/public.html/aau/wnm608/liu.xinyuan/DELTA/">
 
-	<link rel="stylesheet" href="lib/css/styleguide_1.css">
+	<link rel="stylesheet" href="lib/css/styleguide_p.css">
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="css/storetheme_pro.css">
+	<link rel="stylesheet" href="css/storetheme_1.css">
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

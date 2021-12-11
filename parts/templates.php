@@ -99,9 +99,7 @@ function cartTotals() {
 							&dollar;$taxedfixed
 						</div>
 					</div>
-					<div class="form-control-1 card-section">
-							<a href="product_checkout.php" class="form-button">Checkout</a>
-						</div>
+					
 
 	HTML;
 }
@@ -114,12 +112,21 @@ echo <<<HTML
 HTML;
 }
 
+function recommendedAnything($limit=3) {
+		$result = makeQuery(makeConn(), "SELECT * FROM `products` ORDER BY rand() DESC LIMIT $limit");
+
+			recommendedProducts($result);
+
+}
+
+
 function recommendedCategory($cat,$limit=3) {
 		$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category`='$cat' ORDER BY `date_create` DESC LIMIT $limit");
 
 			recommendedProducts($result);
 
 }
+
 
 function recommendedSimilar($cat,$id=0,$limit=3) {
 		$result = makeQuery(makeConn(), "SELECT * FROM `products` WHERE `category`='$cat' AND `id`<>$id ORDER BY rand() DESC LIMIT $limit");
